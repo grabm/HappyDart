@@ -5,6 +5,14 @@ VisualStudioVersion = 17.11.35017.193
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HappyDart.Domain", "HappyDart.Domain\HappyDart.Domain.csproj", "{FB766899-096B-451F-B314-3323B62F5BD0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HappyDart.Application", "HappyDart.Application\HappyDart.Application.csproj", "{26555828-60DD-44F2-9A12-98BB26BCD339}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HappyDart.Infrastructure", "HappyDart.Infrastructure\HappyDart.Infrastructure.csproj", "{BD132A75-DEA1-40B1-8687-75E5C03825F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HappyDart.Api", "HappyDart.Api\HappyDart.Api.csproj", "{4E258E0A-6C0B-436A-80A6-6452D496C7F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HappyDart.Ui", "HappyDart.Ui\HappyDart.Ui.csproj", "{052A5053-99C0-4087-9334-D7C9350CAE95}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +23,24 @@ Global
 		{FB766899-096B-451F-B314-3323B62F5BD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FB766899-096B-451F-B314-3323B62F5BD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FB766899-096B-451F-B314-3323B62F5BD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26555828-60DD-44F2-9A12-98BB26BCD339}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26555828-60DD-44F2-9A12-98BB26BCD339}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26555828-60DD-44F2-9A12-98BB26BCD339}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26555828-60DD-44F2-9A12-98BB26BCD339}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD132A75-DEA1-40B1-8687-75E5C03825F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD132A75-DEA1-40B1-8687-75E5C03825F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD132A75-DEA1-40B1-8687-75E5C03825F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD132A75-DEA1-40B1-8687-75E5C03825F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E258E0A-6C0B-436A-80A6-6452D496C7F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E258E0A-6C0B-436A-80A6-6452D496C7F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E258E0A-6C0B-436A-80A6-6452D496C7F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E258E0A-6C0B-436A-80A6-6452D496C7F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{052A5053-99C0-4087-9334-D7C9350CAE95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{052A5053-99C0-4087-9334-D7C9350CAE95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{052A5053-99C0-4087-9334-D7C9350CAE95}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{052A5053-99C0-4087-9334-D7C9350CAE95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{052A5053-99C0-4087-9334-D7C9350CAE95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{052A5053-99C0-4087-9334-D7C9350CAE95}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
