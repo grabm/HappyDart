@@ -1,6 +1,6 @@
 ﻿using Foundation;
 
-namespace HappyDart.Ui
+namespace HappyDart.Ui.Platforms.iOS
 {
     [Register("AppDelegate")]
     public class AppDelegate : MauiUIApplicationDelegate

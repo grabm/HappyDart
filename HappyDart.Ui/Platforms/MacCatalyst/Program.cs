@@ -1,7 +1,7 @@
 ﻿using ObjCRuntime;
 using UIKit;
 
-namespace HappyDart.Ui
+namespace HappyDart.Ui.Platforms.MacCatalyst
 {
     public class Program
     {
