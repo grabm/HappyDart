@@ -3,15 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35017.193
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HappyDart.Domain", "HappyDart.Domain\HappyDart.Domain.csproj", "{FB766899-096B-451F-B314-3323B62F5BD0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HappyDart.Domain", "HappyDart.Domain\HappyDart.Domain.csproj", "{FB766899-096B-451F-B314-3323B62F5BD0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HappyDart.Application", "HappyDart.Application\HappyDart.Application.csproj", "{26555828-60DD-44F2-9A12-98BB26BCD339}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HappyDart.Application", "HappyDart.Application\HappyDart.Application.csproj", "{26555828-60DD-44F2-9A12-98BB26BCD339}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HappyDart.Infrastructure", "HappyDart.Infrastructure\HappyDart.Infrastructure.csproj", "{BD132A75-DEA1-40B1-8687-75E5C03825F4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HappyDart.Infrastructure", "HappyDart.Infrastructure\HappyDart.Infrastructure.csproj", "{BD132A75-DEA1-40B1-8687-75E5C03825F4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HappyDart.Api", "HappyDart.Api\HappyDart.Api.csproj", "{4E258E0A-6C0B-436A-80A6-6452D496C7F3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HappyDart.Api", "HappyDart.Api\HappyDart.Api.csproj", "{4E258E0A-6C0B-436A-80A6-6452D496C7F3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HappyDart.Ui", "HappyDart.Ui\HappyDart.Ui.csproj", "{052A5053-99C0-4087-9334-D7C9350CAE95}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HappyDart.Ui", "HappyDart.Ui\HappyDart.Ui.csproj", "{052A5053-99C0-4087-9334-D7C9350CAE95}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Server", "Server", "{030E82DA-FD25-4D2F-8824-EA1A82D054FF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Client", "Client", "{C44DA860-D6BC-4C0F-8479-5819E4A6BD7C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -44,6 +48,13 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FB766899-096B-451F-B314-3323B62F5BD0} = {030E82DA-FD25-4D2F-8824-EA1A82D054FF}
+		{26555828-60DD-44F2-9A12-98BB26BCD339} = {030E82DA-FD25-4D2F-8824-EA1A82D054FF}
+		{BD132A75-DEA1-40B1-8687-75E5C03825F4} = {030E82DA-FD25-4D2F-8824-EA1A82D054FF}
+		{4E258E0A-6C0B-436A-80A6-6452D496C7F3} = {030E82DA-FD25-4D2F-8824-EA1A82D054FF}
+		{052A5053-99C0-4087-9334-D7C9350CAE95} = {C44DA860-D6BC-4C0F-8479-5819E4A6BD7C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D32B7B01-617D-4F71-9A61-063753A5342C}
