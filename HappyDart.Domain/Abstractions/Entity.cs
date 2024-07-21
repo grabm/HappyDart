@@ -1,20 +1,18 @@
-﻿namespace HappyDart.Domain.Abstractions
+﻿namespace HappyDart.Domain.Abstractions;
+public class Entity
 {
-    internal class Entity
+    protected Entity()
     {
-        protected Entity()
-        {
-        }
-
-        protected Entity(
-            Guid id,
-            DateTime createdOnUtc)
-        {
-            Id = id;
-            CreatedDateUtc = createdOnUtc;
-        }
-        public Guid Id { get; init; }
-
-        public DateTime CreatedDateUtc { get; init; }
     }
+
+    protected Entity(
+        long id,
+        DateTime createdOnUtc)
+    {
+        Id = id;
+        CreatedDateUtc = createdOnUtc;
+    }
+    public long Id { get; init; }
+
+    public DateTime CreatedDateUtc { get; init; }
 }

@@ -1,5 +1,4 @@
-﻿namespace HappyDart.Domain.Abstractions
-{
+﻿namespace HappyDart.Domain.Abstractions;
     public class Result
     {
         public Result(bool isSuccess, Error error)
@@ -40,4 +39,3 @@
 
         public TValue Value => IsSuccess ? _value : throw new InvalidOperationException();
     }
-}
