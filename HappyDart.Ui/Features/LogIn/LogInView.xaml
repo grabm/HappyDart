@@ -2,11 +2,41 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HappyDart.Ui.Features.LogIn.LogInView">
-    <VerticalStackLayout>
-        <Label 
-            Text="Here will be LogIn page"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" 
-            BackgroundColor="Azure"/>
-    </VerticalStackLayout>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label
+            Text="e-mail"
+            Grid.Row="0"
+            Grid.Column="0"
+            HorizontalOptions="EndAndExpand"
+            VerticalOptions="Start"
+            FontSize="Large"
+            VerticalTextAlignment="End"
+            Padding="10"/>
+        <Entry
+            Placeholder="Enter your e-mail"
+            Grid.Row="0"
+            Grid.Column="1"
+            WidthRequest="200"
+            HorizontalTextAlignment="Start"
+            HorizontalOptions="Start"
+            />
+        <Button
+            Text="Login"
+            Grid.Row="1"
+            Grid.Column="0"
+            HorizontalOptions="End"
+            BackgroundColor="Grey"
+            />
+    </Grid>
+
 </ContentPage>
