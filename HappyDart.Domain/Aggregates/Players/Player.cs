@@ -8,6 +8,6 @@ public class Player : Entity
     {
 
     }
-    public string Name { get; set; }
-    public User User { get; set; }
+    public string Name { get; private set; }
+    public User User { get; private set; }
 }

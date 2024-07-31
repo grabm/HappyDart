@@ -1,6 +1,7 @@
 ﻿using HappyDart.Domain.Abstractions;
 
 namespace HappyDart.Domain.Aggregates.DicGames;
+
 public class DicGame : Entity
 {
     private DicGame()
@@ -8,5 +9,5 @@ public class DicGame : Entity
 
     }
 
-    public string Name { get; set; }
+    public string Name { get; private set; }
 }

@@ -10,11 +10,11 @@ public class Throw : Entity
     {
 
     }
-    public Game Game { get; set; }
-    public Player Player { get; set; }
-    public int Score { get; set; }
-    public bool WasDouble { get; set; }
-    public bool WasTriple { get; set; }
-    public bool WasFinish { get; set; }
-    public DateTime ModificatedDateUtc { get; set; }
+    public Game Game { get; private set; }
+    public Player Player { get; private set; }
+    public int Score { get; private set; }
+    public bool WasDouble { get; private set; }
+    public bool WasTriple { get; private set; }
+    public bool WasFinish { get; private set; }
+    public DateTime ModificatedDateUtc { get; private set; }
 }
