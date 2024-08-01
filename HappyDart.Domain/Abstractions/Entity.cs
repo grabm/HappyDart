@@ -6,13 +6,13 @@ public class Entity
     }
 
     protected Entity(
-        long id,
+        Guid id,
         DateTime createdOnUtc)
     {
         Id = id;
         CreatedDateUtc = createdOnUtc;
     }
-    public long Id { get; init; }
+    public Guid Id { get; init; }
 
     public DateTime CreatedDateUtc { get; init; }
 }
