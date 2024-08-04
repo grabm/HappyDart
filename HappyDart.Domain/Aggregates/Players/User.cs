@@ -3,6 +3,10 @@
 namespace HappyDart.Domain.Aggregates.Users;
 public class User : Entity
 {
+    private User()
+    {
+
+    }
     private User(
         Guid id,
         DateTime createdOnUtc,
