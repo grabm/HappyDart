@@ -1,4 +1,5 @@
 ﻿using HappyDart.Ui.Features.LogIn;
+using HappyDart.Ui.Features.Main;
 using Microsoft.Extensions.Logging;
 
 namespace HappyDart.Ui
@@ -25,6 +26,14 @@ namespace HappyDart.Ui
             {
                 var logInView = new LogInView();
                 logInView.BindingContext = sp.GetRequiredService<LogInViewModel>();
+                return logInView;
+            });
+
+            builder.Services.AddTransient<MainViewModel>();
+            builder.Services.AddTransient(sp =>
+            {
+                var logInView = new MainView();
+                logInView.BindingContext = sp.GetRequiredService<MainViewModel>();
                 return logInView;
             });
 
