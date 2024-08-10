@@ -1,4 +1,5 @@
 using HappyDart.Infrastructure;
+using HappyDart.Application;
 
 namespace HappyDart.Api;
 
@@ -9,6 +10,7 @@ public class Program
         var builder = WebApplication.CreateBuilder(args);
 
         builder.Services.ConfigureInfrastructure(builder.Configuration);
+        builder.Services.RegisterApplication();
 
         builder.Services.AddControllers();
         builder.Services.AddEndpointsApiExplorer();
