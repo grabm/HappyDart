@@ -1,4 +1,7 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using HappyDart.Domain.Abstractions;
+using HappyDart.Domain.Aggregates.Users;
+using HappyDart.Infrastructure.Repositories;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -10,10 +13,17 @@ public static class DependencyInjection
     {
         string connectionString = configuration.GetConnectionString("LocalDb") ?? throw new ArgumentNullException(nameof(configuration));
 
-        serviceCollection.AddDbContext<HappyDartDbContext>(options =>
+        serviceCollection.AddDbContext<IUnitOfWork, HappyDartDbContext>(options =>
         {
             options.UseSqlServer(connectionString);
+
+            options.EnableSensitiveDataLogging();
+            options.LogTo(m => Console.WriteLine(m + "\n"));
         });
+
+        serviceCollection.AddScoped<IPlayerRepository, PlayerRepository>();
+        //serviceCollection.AddScoped<IUnitOfWork, HappyDartDbContext>();
+
         return serviceCollection;
     }
 }

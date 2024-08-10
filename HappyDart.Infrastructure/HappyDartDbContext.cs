@@ -1,8 +1,9 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using HappyDart.Domain.Abstractions;
+using Microsoft.EntityFrameworkCore;
 
 namespace HappyDart.Infrastructure;
 
-public class HappyDartDbContext : DbContext
+public class HappyDartDbContext : DbContext, IUnitOfWork
 {
     public HappyDartDbContext(DbContextOptions<HappyDartDbContext> options) : base(options)
     {

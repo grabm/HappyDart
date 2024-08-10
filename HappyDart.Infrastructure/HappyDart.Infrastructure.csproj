@@ -12,6 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\HappyDart.Application\HappyDart.Application.csproj" />
     <ProjectReference Include="..\HappyDart.Domain\HappyDart.Domain.csproj" />
   </ItemGroup>
 

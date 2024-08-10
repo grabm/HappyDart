@@ -12,7 +12,7 @@ namespace HappyDart.Infrastructure.Configuration
             builder.HasKey(p => p.Id);
             builder.Property(p => p.Name);
             builder.HasOne(p => p.User).WithMany().HasForeignKey(u => u.UserId);
-
+            builder.HasMany(p => p.Games).WithMany(g => g.Players);
         }
     }
 }

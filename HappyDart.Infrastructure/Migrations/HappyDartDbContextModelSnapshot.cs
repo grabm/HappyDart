@@ -22,6 +22,57 @@ namespace HappyDart.Infrastructure.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("GamePlayer", b =>
+                {
+                    b.Property<Guid>("GamesId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("PlayersId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("GamesId", "PlayersId");
+
+                    b.HasIndex("PlayersId");
+
+                    b.ToTable("GamePlayer");
+                });
+
+            modelBuilder.Entity("HappyDart.Domain.Aggregates.DicGames.DicGame", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("CreatedDateUtc")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("DicGame");
+                });
+
+            modelBuilder.Entity("HappyDart.Domain.Aggregates.Games.Game", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("CreatedDateUtc")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid?>("DicGameId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("DicGameId");
+
+                    b.ToTable("Game");
+                });
+
             modelBuilder.Entity("HappyDart.Domain.Aggregates.Players.Player", b =>
                 {
                     b.Property<Guid>("Id")
@@ -68,6 +119,30 @@ namespace HappyDart.Infrastructure.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Users", (string)null);
+                });
+
+            modelBuilder.Entity("GamePlayer", b =>
+                {
+                    b.HasOne("HappyDart.Domain.Aggregates.Games.Game", null)
+                        .WithMany()
+                        .HasForeignKey("GamesId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("HappyDart.Domain.Aggregates.Players.Player", null)
+                        .WithMany()
+                        .HasForeignKey("PlayersId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("HappyDart.Domain.Aggregates.Games.Game", b =>
+                {
+                    b.HasOne("HappyDart.Domain.Aggregates.DicGames.DicGame", "DicGame")
+                        .WithMany()
+                        .HasForeignKey("DicGameId");
+
+                    b.Navigation("DicGame");
                 });
 
             modelBuilder.Entity("HappyDart.Domain.Aggregates.Players.Player", b =>
