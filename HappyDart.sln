@@ -15,7 +15,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Client", "Client", "{C44DA8
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HappyDart.Ui", "HappyDart.Ui\HappyDart.Ui.csproj", "{8761BE71-738B-4D81-8EBF-FD93597D801C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HappyDart.Api", "HappyDart.Api\HappyDart.Api.csproj", "{6A8D4C45-0400-4944-97B4-32AC6E490791}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HappyDart.Api", "HappyDart.Api\HappyDart.Api.csproj", "{6A8D4C45-0400-4944-97B4-32AC6E490791}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HappyDart.Api.Shared", "HappyDart.Api.Shared\HappyDart.Api.Shared.csproj", "{5A172018-A93E-420C-8A23-61E1408381E8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{6A8D4C45-0400-4944-97B4-32AC6E490791}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6A8D4C45-0400-4944-97B4-32AC6E490791}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6A8D4C45-0400-4944-97B4-32AC6E490791}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A172018-A93E-420C-8A23-61E1408381E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A172018-A93E-420C-8A23-61E1408381E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A172018-A93E-420C-8A23-61E1408381E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A172018-A93E-420C-8A23-61E1408381E8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -55,6 +61,7 @@ Global
 		{BD132A75-DEA1-40B1-8687-75E5C03825F4} = {030E82DA-FD25-4D2F-8824-EA1A82D054FF}
 		{8761BE71-738B-4D81-8EBF-FD93597D801C} = {C44DA860-D6BC-4C0F-8479-5819E4A6BD7C}
 		{6A8D4C45-0400-4944-97B4-32AC6E490791} = {030E82DA-FD25-4D2F-8824-EA1A82D054FF}
+		{5A172018-A93E-420C-8A23-61E1408381E8} = {030E82DA-FD25-4D2F-8824-EA1A82D054FF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D32B7B01-617D-4F71-9A61-063753A5342C}
