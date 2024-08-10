@@ -4,6 +4,6 @@ namespace HappyDart.Domain.Aggregates.Users;
 
 public interface IPlayerRepository
 {
-    Task<Player> GetByIdAsync(Guid id, CancellationToken cancellationToken);
+    Task<Player> GetByCredentialsAsync(string email, string password, CancellationToken cancellationToken = default);
     void Add(Player user);
 }
